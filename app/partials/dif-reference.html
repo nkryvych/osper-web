@@ -1,0 +1,13 @@
+<span class="inline" ng-show="referenceHasValue(reference, 'Author')"> {{reference.Author}}. </span>
+<span class="inline" ng-show="referenceHasValue(reference, 'Publication_Date')"> {{reference.Publication_Date}}. </span>
+<span class="inline" ng-show="referenceHasValue(reference, 'Title')"> {{reference.Title}}. </span>
+<i><span class="inline" ng-show="referenceHasValue(reference, 'Series')"> {{reference.Series}}. </span></i>
+
+
+<span class="inline" ng-show="referenceHasValue(reference, 'Volume')"> {{reference.Volume}}. </span>
+<span class="inline" ng-show="referenceHasValue(reference, 'Issue')"> {{reference.Issue}}. </span>
+<span class="inline" ng-if="referenceHasValue(reference, 'Pages')"> {{reference.Pages}}. </span>
+
+<a ng-href="{{reference.Online_Resource}}" target="_blank">{{reference.DOI}}</a>
+
+
